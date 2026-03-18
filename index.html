@@ -5,15 +5,16 @@ title: Home
 <!-- ========== BIO ========== -->
 <div class="docs-section" id="bio">
   <h4>Bio</h4>
-  
   <p>
-    I am a MS student in the <a href="https://minghsiehece.usc.edu/">Ming Hsieh Department of Electric and Computer Engineering</a> at <a href="https://www.usc.edu/">University of Southern California</a>, advised by <a href="https://sites.usc.edu/zchen/">Prof. Zaijun Chen</a>. 
-              I obtained my Bachelor’s degree in Physics from Nankai University with a GPA of 3.87/4.0, ranking in the top level of my graduating year. I graduated <strong>Summa Cum Laude</strong> as one of the Outstanding Graduates (Top 1%).
-  </p>
-  <p>
-    My current research primarily focuses on <strong>optical neural networks</strong>, 
-    aiming to uncover consistent principles that drive ultralow-energy analog computing, AI/ML acceleration hardware, interconnects, and distributed computing systems. I have a strong interest in the <strong>design and optimization of algorithms</strong>, and I am passionate about advancing computational efficiency through innovative architectures and methodologies.
-</div>
+    I am currently a D.Phil. student in Engineering Science at the <a href="https://www.ox.ac.uk/">University of Oxford</a>, affiliated with Hertford College, under the supervision of Prof. Stephen Morris and Prof. Steve Elston. 
+    Previously, I received my M.S. in Electrical Engineering from the <a href="https://minghsiehece.usc.edu/">University of Southern California</a>, advised by Prof. Zaijun Chen, and my B.S. in Physics from Nankai University, where I graduated <strong>Summa Cum Laude</strong> (Top 1%).
+    </p>
+    
+    <p>
+    My research lies at the intersection of photonics and machine learning, with a focus on <strong>optical neural networks</strong>, ultralow-energy computing, and next-generation AI hardware systems. 
+    I am particularly interested in bridging physical computing architectures with efficient algorithm design, enabling scalable, high-performance, and energy-efficient intelligent systems.
+    </p>
+  </div>
 
 
 
@@ -107,34 +108,7 @@ title: Home
 </div>
 
 <!-- ========== PROJECTS ========== 
-<div class="docs-section" id="projects">
-  <h4>Projects</h4>
-
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
-    <li><div class="button" data-ref="#projects-all">All</div></li>
-  </ul>
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="projects-selected">
-      {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
-      {% for project in selected_projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
+e }}</b> <br/>
                   {{ project.subtitle }}
                 </div>
 
@@ -185,7 +159,13 @@ title: Home
 <div class="docs-section" id="resume">
   <h4>Vitæ</h4>
 
-  <p>Full Resume in <a href={{ "/assets/cv/CV_Yuanhao.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>
+  <div class="docs-section" id="resume">
+    <h4>Vitæ</h4>
+  
+    <p>
+      A detailed curriculum vitae is available in 
+      <a href={{ "/assets/cv/CV_Yuanhao.pdf" | prepend: site.baseurl }} target="_blank">PDF format</a>.
+    </p>
 
   <!-- The Timeline -->
   <ul class="timeline">
